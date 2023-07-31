@@ -1,2 +1,2 @@
-const hamburger = document.querySelector('.btn');
+const hamburgerr = document.querySelector('.btn');
 const navMenu = document.querySelector('.menu-sec');
