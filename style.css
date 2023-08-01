@@ -45,7 +45,7 @@ body {
     left: -600px;
     top: 0;
     gap: 0;
-    background-color: rgba(34, 67, 252, 0.8);
+    background-color: rgba(34, 67, 252, 0.82);
     backdrop-filter: blur(3px);
     height: 100%;
     width: 100%;
