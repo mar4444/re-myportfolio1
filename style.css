@@ -691,7 +691,7 @@ body {
 .languages-popup {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 20px;
+  margin-top: 10px;
   gap: 5px;
 }
 
@@ -699,13 +699,14 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 5px;
-  margin-top: 10px;
+  margin-top: 40px;
 }
 
 .btn-popup .live {
   border-radius: 8px;
   border: 1px solid #6070ff;
-  padding: 5px 10px;
+  /*padding: 5px 10px;*/
+  padding: 10px 25px;
   background-color: white;
   color: #396df2;
   font-size: 12px;
@@ -1013,5 +1014,17 @@ body {
     flex-flow: row wrap;
     justify-content: space-between;
     margin-top: 0;
+  }
+
+  .languages-popup {
+    margin-top: 20px;
+  }
+
+  .btn-popup {
+    margin-top: 10px;
+  }
+
+  .btn-popup .live {
+    padding: 5px 10px;
   }
 }
