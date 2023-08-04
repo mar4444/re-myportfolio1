@@ -136,6 +136,27 @@ showPopupBtn.forEach((e, i) => {
     `;
 
     // Type code bellow .....
+    const body = document.querySelector('body');
+    body.appendChild(popUpContainer);
+    const popUpBox = document.querySelector('.popup_section');
+    popUpBox.innerHTML = popupEle;
+    const closePopup = document.querySelectorAll('.popup-btn');
+    closePopup.forEach((e) => {
+      e.addEventListener('click', () => {
+        popUpContainer.remove();
+      });
+    });
+
+
+
+
+
+
+
+
+
+
+
 
   });
 });
