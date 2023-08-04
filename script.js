@@ -135,7 +135,6 @@ showPopupBtn.forEach((e, i) => {
 
     `;
 
-    // Type code bellow .....
     const body = document.querySelector('body');
     body.appendChild(popUpContainer);
     const popUpBox = document.querySelector('.popup_section');
@@ -146,17 +145,5 @@ showPopupBtn.forEach((e, i) => {
         popUpContainer.remove();
       });
     });
-
-
-
-
-
-
-
-
-
-
-
-
   });
 });
