@@ -620,12 +620,12 @@ body {
   margin: 0 auto;
   border: 1px solid #ebecf0;
   border-radius: 5px;
-  padding: 0 20px;
+  padding: 0 20px 20px 20px;
 }
 
 .all-details {
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: row nowrap;
   justify-content: space-between;
 }
 
@@ -767,6 +767,10 @@ body {
 .popup-over {
   height: 350px;
   overflow: hidden;
+}
+
+.detail-popup {
+  margin-top: -100px;
 }
 
 /* Desktop Version */
@@ -1008,5 +1012,6 @@ body {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
+    margin-top: 0;
   }
 }
