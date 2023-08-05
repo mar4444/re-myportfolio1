@@ -124,9 +124,10 @@
             </div>
             <form action="https://formspree.io/f/meqwnbbj" method="post" class="form-set">
                 <input class="text-input" type="text" maxlength="30" name="user-name" placeholder="Lorem Ipsum" required />
-                <input class="text-input" type="email" name="user-email" placeholder="Loremipsum@gmail.com" required />
+                <input class="text-input" id="user-email" type="email" name="user-email" placeholder="Loremipsum@gmail.com" required />
                 <textarea class="contact-message" name="user-message" maxlength="500" placeholder="Write your message here" required></textarea>
                 <button type="submit" class="contact-btn">Get in touch</button>
+                <span id="error-msg"></span>
             </form>
         </section>
 

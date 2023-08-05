@@ -773,6 +773,11 @@ body {
   margin-top: -100px;
 }
 
+#error-msg {
+  font-size: 1.2rem;
+  color: red;
+}
+
 /* Desktop Version */
 @media screen and (min-width: 768px) {
   .logo {

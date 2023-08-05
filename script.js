@@ -147,3 +147,19 @@ showPopupBtn.forEach((e, i) => {
     });
   });
 });
+
+const error = document.getElementById('error-msg');
+const form = document.querySelector('.form-set');
+const userEmail = document.getElementById('user-email');
+const showError = 'Please write your email address in lower case';
+
+form.addEventListener('submit', (event) => {
+  event.preventDefault();
+  const userInput = userEmail.value;
+  if (userInput !== userInput.toLowerCase()) {
+    error.innerText = showError;
+  } else {
+    error.innerText = '';
+    form.submit();
+  }
+});
