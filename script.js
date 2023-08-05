@@ -151,18 +151,16 @@ showPopupBtn.forEach((e, i) => {
 const error = document.getElementById('error-msg');
 const form = document.querySelector('.form-set');
 const userEmail = document.getElementById('user-email');
-const fName = document.getElementById('name');
+const firstName = document.getElementById('name');
 const textArea = document.getElementById('textarea');
 const showError = 'Please write your email address in lower case';
 
-// Local storage
-
-const formChangeEvents = [fName, userEmail, textArea];
+const formChangeEvents = [firstName, userEmail, textArea];
 formChangeEvents.forEach((eachField) => {
   eachField.addEventListener('change', () => {
     error.innerHTML = '';
     const formDataObject = {
-      nameKey: fName.value,
+      nameKey: firstName.value,
       emailKey: userEmail.value,
       textAreaKey: textArea.value,
     };
@@ -173,11 +171,11 @@ formChangeEvents.forEach((eachField) => {
 window.addEventListener('load', () => {
   const formInfo = JSON.parse(localStorage.getItem('formValues'));
   if (formInfo) {
-    fName.value = formInfo.nameKey;
+    firstName.value = formInfo.nameKey;
     userEmail.value = formInfo.emailKey;
     textArea.value = formInfo.textAreaKey;
   } else {
-    fName.value = '';
+    firstName.value = '';
     userEmail.value = '';
     textArea.value = '';
   }
