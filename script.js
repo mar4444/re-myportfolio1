@@ -157,6 +157,18 @@ const showError = 'Please write your email address in lower case';
 
 // Local storage
 
+const formChangeEvents = [fName, userEmail, textArea];
+formChangeEvents.forEach((eachField) => {
+  eachField.addEventListener('change', () => {
+    error.innerHTML = '';
+    const formDataObject = {
+      nameKey: fName.value,
+      emailKey: userEmail.value,
+      textAreaKey: textArea.value,
+    };
+    localStorage.setItem('formValues', JSON.stringify(formDataObject));
+  });
+});
 
 window.addEventListener('load', () => {
   const formInfo = JSON.parse(localStorage.getItem('formValues'));
